@@ -20,7 +20,7 @@ app.post("/", function (req, res) {
   const firstName = req.body.fName;
   const lastName = req.body.lName;
   const email = req.body.email;
-
+  console.log("Post request");
   const data = {
     members: [
       {
