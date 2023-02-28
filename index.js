@@ -35,7 +35,7 @@ app.post("/", function (req, res) {
   };
   const jsonData = JSON.stringify(data);
   console.log("HDO URL");
-  const url = process.env.API_URL;
+  const url = "https://us8.api.mailchimp.com/3.0/lists/fdb7be6378";
   const options = {
     method: "POST",
     auth: process.env.API_AUTH,
@@ -43,6 +43,7 @@ app.post("/", function (req, res) {
   console.log("Post request");
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
+      console.log("200 hala");
       res.sendFile(__dirname + "/success.html");
     } else {
       res.sendFile(__dirname + "/failure.html");
