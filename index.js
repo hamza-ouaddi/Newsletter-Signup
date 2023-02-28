@@ -8,7 +8,7 @@ console.log(process.env.PORT);
 const app = express();
 const port = process.env.PORT;
 
-app.use(express.static(__dirname + 'public'));
+app.use("/public",express.static(__dirname + 'public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
