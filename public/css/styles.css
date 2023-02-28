@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side {
+  height: 200px;
+  background: url("/images/wallpaper\ \(4\).jpg");
+  background-size: cover;
+}
+
+.left-side .text {
+  color: #fff;
+  text-align: center;
+}
+
+.left-side .text p {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5em 0;
+}
+
+.signup-form {
+  color: #000;
+}
+
+.right-side form {
+  width: 325px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  padding: 1em;
+  margin-bottom: -1px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 1.25rem;
+}
+
+.signup-form p {
+  margin: 1.5em 0;
+  font-size: 0.8rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: #810ca8;
+  color: #fff;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #4c0564;
+}
+
+.small-text {
+  font-weight: 300;
+  font-size: 80%;
+  text-align: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-side,
+  .right-side {
+    display: flex;
+    width: 50%;
+    height: 100%;
+  }
+}

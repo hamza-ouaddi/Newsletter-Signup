@@ -1,0 +1,151 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("/images/wallpaper\ \(4\).jpg");
+  background-size: cover;
+}
+
+.wrapper {
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+}
+
+/*Success page*/
+
+h1 {
+  font-size: 2.5rem;
+  color: #03c988;
+}
+
+p {
+  margin: 1em;
+}
+
+.small-title {
+  font-size: 1rem;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/*Failure page*/
+
+.failure-card h1 {
+  color: #ff0032;
+}
+
+.try-again-btn {
+  background-color: #eb455f;
+  color: #fff;
+
+  padding: 10px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.try-again-btn:hover {
+  background-color: #eb213f;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper {
+    width: 400px;
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 0.8em;
+  }
+
+  .small-title {
+    font-size: 0.9rem;
+  }
+
+  .small-text {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .wrapper {
+    width: 350px;
+    height: 350px;
+    padding: 3em;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin: 0.8em;
+  }
+
+  .small-title {
+    font-size: 0.9rem;
+  }
+
+  .small-text {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .wrapper {
+    width: 280px;
+    height: 280px;
+    padding: 3em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0.8em;
+  }
+
+  .small-title {
+    font-size: 0.8rem;
+  }
+
+  .small-text {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+}
