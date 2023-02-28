@@ -15,6 +15,11 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
+//get css file
+app.get("/styles.css", function(req,res){
+  res.sendFile(__dirname + "/public/css/styles.css")
+})
+
 app.post("/", function (req, res) {
   const firstName = req.body.fName;
   const lastName = req.body.lName;
