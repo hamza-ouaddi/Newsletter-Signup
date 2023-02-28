@@ -20,7 +20,7 @@ app.post("/", function (req, res) {
   const firstName = req.body.fName;
   const lastName = req.body.lName;
   const email = req.body.email;
-  console.log("Post request");
+  
   const data = {
     members: [
       {
@@ -34,12 +34,13 @@ app.post("/", function (req, res) {
     ],
   };
   const jsonData = JSON.stringify(data);
+  console.log("HDO URL");
   const url = process.env.API_URL;
   const options = {
     method: "POST",
     auth: process.env.API_AUTH,
   };
-
+  console.log("Post request");
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
       res.sendFile(__dirname + "/success.html");
@@ -51,9 +52,10 @@ app.post("/", function (req, res) {
       console.log(JSON.parse(data));
     });
   });
-
+  console.log("HDO WRITE");
   request.write(jsonData);
   request.end();
+  console.log("hada lkher");
 });
 
 //to try again after the failure
