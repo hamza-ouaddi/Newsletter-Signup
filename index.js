@@ -35,7 +35,7 @@ app.post("/", function (req, res) {
   };
   const jsonData = JSON.stringify(data);
   console.log("HDO URL");
-  const url = "https://us8.api.mailchimp.com/3.0/lists/fdb7be6378";
+  const url = process.env.API_URL;
   const options = {
     method: "POST",
     auth: process.env.API_AUTH,
