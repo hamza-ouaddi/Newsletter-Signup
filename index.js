@@ -8,17 +8,13 @@ console.log(process.env.PORT);
 const app = express();
 const port = process.env.PORT;
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + 'public'));
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
-
-//get css file
-app.get("/styles.css", function(req,res){
-  res.sendFile(__dirname + "/public/css/styles.css")
-})
 
 app.post("/", function (req, res) {
   const firstName = req.body.fName;
