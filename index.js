@@ -8,7 +8,7 @@ console.log(process.env.PORT);
 const app = express();
 const port = process.env.PORT;
 
-app.use("/css",express.static(__dirname + 'public/css'));
+app.use("/css",express.static(__dirname + '/public/css'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
